@@ -12,6 +12,9 @@
 		DAB217582C5C32B500FE8627 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB217572C5C32B500FE8627 /* ViewController.swift */; };
 		DAB2175D2C5C32B800FE8627 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB2175C2C5C32B800FE8627 /* Assets.xcassets */; };
 		DAB217602C5C32B800FE8627 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = DAB2175F2C5C32B800FE8627 /* Base */; };
+		DAB217692C5C39EB00FE8627 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = DAB217682C5C39EB00FE8627 /* SnapKit */; };
+		DAB2176B2C5C39EB00FE8627 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = DAB2176A2C5C39EB00FE8627 /* SnapKit-Dynamic */; };
+		DAB2176D2C5C3DB500FE8627 /* AdemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2176C2C5C3DB500FE8627 /* AdemViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,7 @@
 		DAB2175C2C5C32B800FE8627 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAB2175F2C5C32B800FE8627 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAB217612C5C32B800FE8627 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAB2176C2C5C3DB500FE8627 /* AdemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdemViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAB217692C5C39EB00FE8627 /* SnapKit in Frameworks */,
+				DAB2176B2C5C39EB00FE8627 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +66,7 @@
 				DAB2175C2C5C32B800FE8627 /* Assets.xcassets */,
 				DAB2175E2C5C32B800FE8627 /* LaunchScreen.storyboard */,
 				DAB217612C5C32B800FE8627 /* Info.plist */,
+				DAB2176C2C5C3DB500FE8627 /* AdemViewController.swift */,
 			);
 			path = iOSVC;
 			sourceTree = "<group>";
@@ -80,6 +87,10 @@
 			dependencies = (
 			);
 			name = iOSVC;
+			packageProductDependencies = (
+				DAB217682C5C39EB00FE8627 /* SnapKit */,
+				DAB2176A2C5C39EB00FE8627 /* SnapKit-Dynamic */,
+			);
 			productName = iOSVC;
 			productReference = DAB217502C5C32B500FE8627 /* iOSVC.app */;
 			productType = "com.apple.product-type.application";
@@ -108,6 +119,9 @@
 				Base,
 			);
 			mainGroup = DAB217472C5C32B500FE8627;
+			packageReferences = (
+				DAB217672C5C39EB00FE8627 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = DAB217512C5C32B500FE8627 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -135,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAB217582C5C32B500FE8627 /* ViewController.swift in Sources */,
+				DAB2176D2C5C3DB500FE8627 /* AdemViewController.swift in Sources */,
 				DAB217542C5C32B500FE8627 /* AppDelegate.swift in Sources */,
 				DAB217562C5C32B500FE8627 /* SceneDelegate.swift in Sources */,
 			);
@@ -349,6 +364,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DAB217672C5C39EB00FE8627 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DAB217682C5C39EB00FE8627 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DAB217672C5C39EB00FE8627 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		DAB2176A2C5C39EB00FE8627 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DAB217672C5C39EB00FE8627 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DAB217482C5C32B500FE8627 /* Project object */;
 }
